@@ -3,11 +3,11 @@ import numpy as np
 sex_to_decimal_dict = {'M': 2, 'F': 4, 'I': 8}
 
 
-class TrainingSetManipulations:
+class DataManipulations:
     @staticmethod
-    def train_fp_to_data_frame(x_training_fp, y_training_fp):
+    def train_fp_to_numpy(x_training_fp, y_training_fp):
         x_samples = np.genfromtxt(x_training_fp, dtype='str', delimiter=',')
-        X = [TrainingSetManipulations.__parse_sample(s) for s in x_samples]
+        X = [DataManipulations.__parse_sample(s) for s in x_samples]
 
         Y = np.genfromtxt(y_training_fp, dtype=np.int)
 
@@ -25,3 +25,10 @@ class TrainingSetManipulations:
             x_matrix[i] = np.float(sample[i])
 
         return x_matrix
+
+    @staticmethod
+    def read_test_file(test_file_fp):
+        samples = np.genfromtxt(test_file_fp, dtype='str', delimiter=',')
+
+        return [DataManipulations.__parse_sample(s) for s in samples]
+
