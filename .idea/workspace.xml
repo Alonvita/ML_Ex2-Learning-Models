@@ -4,6 +4,7 @@
     <list default="true" id="d88831b6-380d-4ea9-af51-9c95e0e134e6" name="Default Changelist" comment="first init + loading training set to df">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/ML_Intro_Ex2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ML_Intro_Ex2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -12,8 +13,10 @@
 >>>>>>> 6a9ced687cd6c3b88b0ba32fac81874247a50d9a
 =======
       <change afterPath="$PROJECT_DIR$/TrainModel.py" afterDir="false" />
+=======
+>>>>>>> f691f3f80ea0e27cc0f60c16b300cd81fb070ae4
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrainingSetManipulations.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataManipulations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrainModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/TrainModel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ex2.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex2.py" afterDir="false" />
 >>>>>>> 57dbce4ff2aae742ff1af9c1914eb5f200fa0900
     </list>
@@ -25,7 +28,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/ML_Intro_Ex2$openTrainingSet.coverage" NAME="openTrainingSet Coverage Results" MODIFIED="1558184955429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ML_Intro_Ex2$ex2.coverage" NAME="ex2 Coverage Results" MODIFIED="1558194679928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ML_Intro_Ex2$ex2.coverage" NAME="ex2 Coverage Results" MODIFIED="1558216192648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 <<<<<<< HEAD
 =======
@@ -53,14 +56,14 @@
         <counts>
           <entry key="TrainingSetManipulations" value="36" />
           <entry key="dummy" value="81" />
-          <entry key="py" value="6720" />
+          <entry key="py" value="6849" />
           <entry key="txt" value="113" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="230" />
-          <entry key="Python" value="6720" />
+          <entry key="Python" value="6849" />
         </counts>
       </usages-collector>
     </session>
@@ -71,6 +74,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataManipulations.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="204">
@@ -95,6 +99,10 @@
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
+=======
+            <state relative-caret-position="60">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+>>>>>>> f691f3f80ea0e27cc0f60c16b300cd81fb070ae4
             </state>
           </provider>
         </entry>
@@ -113,9 +121,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ex2.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="68">
@@ -127,6 +136,10 @@
             <state relative-caret-position="674">
               <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
 >>>>>>> 57dbce4ff2aae742ff1af9c1914eb5f200fa0900
+=======
+            <state relative-caret-position="378">
+              <caret line="23" column="50" lean-forward="true" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+>>>>>>> f691f3f80ea0e27cc0f60c16b300cd81fb070ae4
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -140,6 +153,7 @@
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="510">
               <caret line="30" column="11" lean-forward="true" selection-start-line="2" selection-end-line="30" selection-end-column="11" />
 =======
@@ -149,6 +163,10 @@
             <state>
               <caret lean-forward="true" />
 >>>>>>> 57dbce4ff2aae742ff1af9c1914eb5f200fa0900
+=======
+            <state relative-caret-position="210">
+              <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+>>>>>>> f691f3f80ea0e27cc0f60c16b300cd81fb070ae4
               <folding>
                 <element signature="e#35#53#0" expanded="true" />
               </folding>
@@ -159,24 +177,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PassiveAggressive.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+            <state relative-caret-position="60">
+              <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <marker date="1558214072505" expanded="true" signature="137:138" ph="..." />
+                <marker date="1558215824338" expanded="true" signature="137:138" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TrainModel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="240">
+              <caret line="8" column="49" lean-forward="true" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
               <folding>
                 <element signature="e#1#12#0" expanded="true" />
-                <marker date="1558214617619" expanded="true" signature="51:56" ph="..." />
+                <marker date="1558216263347" expanded="true" signature="51:56" ph="..." />
               </folding>
             </state>
           </provider>
@@ -185,8 +203,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ModelInterface.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            <state relative-caret-position="30">
+              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+              <folding>
+                <marker date="1558216207612" expanded="true" signature="43:48" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -240,12 +261,12 @@
         <option value="$PROJECT_DIR$/TrainingSetManipulations" />
         <option value="$PROJECT_DIR$/dontUpload.py" />
         <option value="$PROJECT_DIR$/Perceptron.py" />
-        <option value="$PROJECT_DIR$/ModelInterface.py" />
-        <option value="$PROJECT_DIR$/PassiveAggressive.py" />
-        <option value="$PROJECT_DIR$/TrainModel.py" />
         <option value="$PROJECT_DIR$/TrainingSetManipulations.py" />
         <option value="$PROJECT_DIR$/DataManipulations.py" />
+        <option value="$PROJECT_DIR$/PassiveAggressive.py" />
         <option value="$PROJECT_DIR$/ex2.py" />
+        <option value="$PROJECT_DIR$/ModelInterface.py" />
+        <option value="$PROJECT_DIR$/TrainModel.py" />
       </list>
     </option>
   </component>
@@ -257,6 +278,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -265,6 +287,11 @@
     <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1874" />
+=======
+    <option name="x" value="8" />
+    <option name="y" value="-13" />
+    <option name="width" value="1873" />
+>>>>>>> f691f3f80ea0e27cc0f60c16b300cd81fb070ae4
     <option name="height" value="1096" />
 >>>>>>> 6a9ced687cd6c3b88b0ba32fac81874247a50d9a
   </component>
@@ -397,6 +424,7 @@
   </component>
   <component name="ToolWindowManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
@@ -408,6 +436,13 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24862184" />
 >>>>>>> 6a9ced687cd6c3b88b0ba32fac81874247a50d9a
+=======
+    <frame x="-8" y="-8" width="1865" height="1096" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2498615" />
+>>>>>>> f691f3f80ea0e27cc0f60c16b300cd81fb070ae4
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -440,6 +475,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="first init + loading training set to df" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/../ML_EX1/python36_venv/Lib/site-packages/pandas/io/formats/format.py" />
     <entry file="file://$PROJECT_DIR$/TrainingSetManipulations.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -460,6 +496,9 @@
     </entry>
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/train_y.txt">
+=======
+    <entry file="file://$PROJECT_DIR$/train_x.txt">
+>>>>>>> f691f3f80ea0e27cc0f60c16b300cd81fb070ae4
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20638">
           <caret line="1214" column="24" selection-start-line="1214" selection-start-column="24" selection-end-line="1214" selection-end-column="24" />
@@ -478,6 +517,7 @@
       </provider>
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/train_x.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -491,13 +531,7 @@
         <state relative-caret-position="704">
           <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
 >>>>>>> 57dbce4ff2aae742ff1af9c1914eb5f200fa0900
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1558214072505" expanded="true" signature="137:138" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+=======
     <entry file="file://$PROJECT_DIR$/train_y.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -505,7 +539,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ModelInterface.py">
+    <entry file="file://$PROJECT_DIR$/dontUpload.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="229" column="44" lean-forward="true" selection-start-line="229" selection-start-column="44" selection-end-line="229" selection-end-column="44" />
+>>>>>>> f691f3f80ea0e27cc0f60c16b300cd81fb070ae4
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataManipulations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PassiveAggressive.py">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
         <state relative-caret-position="360">
@@ -513,13 +565,22 @@
 >>>>>>> 6a9ced687cd6c3b88b0ba32fac81874247a50d9a
 =======
         <state relative-caret-position="60">
+<<<<<<< HEAD
           <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
 >>>>>>> 57dbce4ff2aae742ff1af9c1914eb5f200fa0900
+=======
+          <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1558215824338" expanded="true" signature="137:138" ph="..." />
+          </folding>
+>>>>>>> f691f3f80ea0e27cc0f60c16b300cd81fb070ae4
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Perceptron.py">
+    <entry file="file://$PROJECT_DIR$/ex2.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="510">
@@ -531,37 +592,44 @@
         <state>
           <caret lean-forward="true" />
 >>>>>>> 57dbce4ff2aae742ff1af9c1914eb5f200fa0900
+=======
+        <state relative-caret-position="378">
+          <caret line="23" column="50" lean-forward="true" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+>>>>>>> f691f3f80ea0e27cc0f60c16b300cd81fb070ae4
           <folding>
-            <element signature="e#35#53#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
 >>>>>>> 6a9ced687cd6c3b88b0ba32fac81874247a50d9a
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TrainModel.py">
+    <entry file="file://$PROJECT_DIR$/ModelInterface.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="30">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
           <folding>
-            <element signature="e#1#12#0" expanded="true" />
-            <marker date="1558214617619" expanded="true" signature="51:56" ph="..." />
+            <marker date="1558216207612" expanded="true" signature="43:48" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataManipulations.py">
+    <entry file="file://$PROJECT_DIR$/Perceptron.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        <state relative-caret-position="210">
+          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+          <folding>
+            <element signature="e#35#53#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ex2.py">
+    <entry file="file://$PROJECT_DIR$/TrainModel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="674">
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+        <state relative-caret-position="240">
+          <caret line="8" column="49" lean-forward="true" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#1#12#0" expanded="true" />
+            <marker date="1558216263347" expanded="true" signature="51:56" ph="..." />
           </folding>
         </state>
       </provider>
