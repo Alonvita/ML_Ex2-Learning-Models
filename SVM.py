@@ -38,3 +38,4 @@ class SVM(Model):
         y_hat = self.predict(row)
         self._weight_matrix
 
+
