@@ -1,8 +1,8 @@
 import numpy as np
-import ModelInterface
+from ModelInterface import Model
 
 
-class PassiveAggressive(ModelInterface):
+class PassiveAggressive(Model):
     """
     PassiveAggressive(ModelInterface)
     """
