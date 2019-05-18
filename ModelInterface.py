@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 from abc import abstractmethod, ABC
+=======
+from abc import ABC, abstractmethod
+>>>>>>> master
 
 
 # Created By Alon Vita
