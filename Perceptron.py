@@ -2,6 +2,7 @@
 import numpy as np
 from ModelInterface import Model
 
+
 class Perceptron(Model):
     """
     Perceptron(ModelInterface).
