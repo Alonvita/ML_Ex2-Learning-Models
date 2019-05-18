@@ -4,7 +4,7 @@ import random as rd
 
 class TrainModel:
     @staticmethod
-    def train(model, X, Y, epochs, learning_rate, print_results=False):
+    def fit_model(model, X, Y, epochs, learning_rate, print_results=False):
         """
         train(model, X, Y, epochs, learning_rate, verbose=False).
 
