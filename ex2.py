@@ -25,9 +25,9 @@ def main(training_x_fp, training_y_fp, x_values_test_fp):
     # svm = SVM(input_dim, output_dim, 0.1) TODO: boredda take this off...
     passive_aggressive = PassiveAggressive(input_dim, output_dim)
 
-    best_perceptron = TrainModel.fit_model(perceptron, X, Y, OUTPUT_SIZE, 0.001)
+    best_perceptron = FitModel.fit_model(perceptron, X, Y, OUTPUT_SIZE, 0.001)
     # best_svm = FitModel.train(svm, X, Y, 50, 0.001) TODO: this too
-    best_pa = TrainModel.fit_model(passive_aggressive, X, Y, OUTPUT_SIZE, None)
+    best_pa = FitModel.fit_model(passive_aggressive, X, Y, OUTPUT_SIZE, None)
 
     manipulated_test_X_values = DM.read_test_file(x_values_test_fp)
 
