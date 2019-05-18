@@ -1,9 +1,9 @@
 # Algorithm Developed by Alon Vita
 import numpy as np
-import ModelInterface
+from ModelInterface import Model
 
 
-class Perceptron(ModelInterface):
+class Perceptron(Model):
     """
     Perceptron(ModelInterface).
     """
