@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d88831b6-380d-4ea9-af51-9c95e0e134e6" name="Default Changelist" comment="first init + loading training set to df">
-      <change afterPath="$PROJECT_DIR$/ModelInterface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Perceptron.py" beforeDir="false" afterPath="$PROJECT_DIR$/Perceptron.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,15 +38,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="TrainingSetManipulations" value="36" />
-          <entry key="dummy" value="46" />
-          <entry key="py" value="3583" />
+          <entry key="dummy" value="47" />
+          <entry key="py" value="4352" />
           <entry key="txt" value="113" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="195" />
-          <entry key="Python" value="3583" />
+          <entry key="PLAIN_TEXT" value="196" />
+          <entry key="Python" value="4352" />
         </counts>
       </usages-collector>
     </session>
@@ -94,21 +95,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Perceptron.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+            <state relative-caret-position="284">
+              <caret line="20" column="87" selection-start-line="20" selection-start-column="87" selection-end-line="20" selection-end-column="87" />
               <folding>
                 <element signature="e#35#53#0" expanded="true" />
-                <marker date="1558195322638" expanded="true" signature="370:479" ph="..." />
-                <marker date="1558195322638" expanded="true" signature="2516:2985" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ModelInterface.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -144,6 +143,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>row</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
@@ -160,9 +164,9 @@
         <option value="$PROJECT_DIR$/TrainingSetManipulations" />
         <option value="$PROJECT_DIR$/dontUpload.py" />
         <option value="$PROJECT_DIR$/ex2.py" />
-        <option value="$PROJECT_DIR$/Perceptron.py" />
         <option value="$PROJECT_DIR$/TrainingSetManipulations.py" />
         <option value="$PROJECT_DIR$/ModelInterface.py" />
+        <option value="$PROJECT_DIR$/Perceptron.py" />
       </list>
     </option>
   </component>
@@ -382,6 +386,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ModelInterface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TrainingSetManipulations.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -391,20 +402,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Perceptron.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        <state relative-caret-position="284">
+          <caret line="20" column="87" selection-start-line="20" selection-start-column="87" selection-end-line="20" selection-end-column="87" />
           <folding>
             <element signature="e#35#53#0" expanded="true" />
-            <marker date="1558195322638" expanded="true" signature="370:479" ph="..." />
-            <marker date="1558195322638" expanded="true" signature="2516:2985" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ModelInterface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
         </state>
       </provider>
     </entry>
