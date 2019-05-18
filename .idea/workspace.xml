@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d88831b6-380d-4ea9-af51-9c95e0e134e6" name="Default Changelist" comment="first init + loading training set to df">
-      <change afterPath="$PROJECT_DIR$/TrainModel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrainingSetManipulations.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataManipulations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex2.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassiveAggressive.py" beforeDir="false" afterPath="$PROJECT_DIR$/PassiveAggressive.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dontUpload.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +14,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/ML_Intro_Ex2$openTrainingSet.coverage" NAME="openTrainingSet Coverage Results" MODIFIED="1558184955429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ML_Intro_Ex2$ex2.coverage" NAME="ex2 Coverage Results" MODIFIED="1558194679928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ML_Intro_Ex2$ex2.coverage" NAME="ex2 Coverage Results" MODIFIED="1558215826721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-294383106">
@@ -41,14 +40,14 @@
         <counts>
           <entry key="TrainingSetManipulations" value="36" />
           <entry key="dummy" value="81" />
-          <entry key="py" value="6720" />
+          <entry key="py" value="6752" />
           <entry key="txt" value="113" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="230" />
-          <entry key="Python" value="6720" />
+          <entry key="Python" value="6752" />
         </counts>
       </usages-collector>
     </session>
@@ -58,20 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataManipulations.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dontUpload.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="239" column="50" lean-forward="true" selection-start-line="239" selection-start-column="50" selection-end-line="239" selection-end-column="50" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -85,14 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ex2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="674">
-              <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -100,8 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Perceptron.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
+            <state relative-caret-position="150">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="e#35#53#0" expanded="true" />
               </folding>
@@ -109,14 +93,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PassiveAggressive.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+            <state relative-caret-position="420">
+              <caret line="41" column="55" lean-forward="true" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <marker date="1558214072505" expanded="true" signature="137:138" ph="..." />
+                <marker date="1558215824338" expanded="true" signature="137:138" ph="..." />
               </folding>
             </state>
           </provider>
@@ -125,11 +109,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TrainModel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="720">
+              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
               <folding>
                 <element signature="e#1#12#0" expanded="true" />
-                <marker date="1558214617619" expanded="true" signature="51:56" ph="..." />
+                <marker date="1558215515930" expanded="true" signature="51:56" ph="..." />
               </folding>
             </state>
           </provider>
@@ -193,11 +177,11 @@
         <option value="$PROJECT_DIR$/dontUpload.py" />
         <option value="$PROJECT_DIR$/Perceptron.py" />
         <option value="$PROJECT_DIR$/ModelInterface.py" />
-        <option value="$PROJECT_DIR$/PassiveAggressive.py" />
-        <option value="$PROJECT_DIR$/TrainModel.py" />
         <option value="$PROJECT_DIR$/TrainingSetManipulations.py" />
         <option value="$PROJECT_DIR$/DataManipulations.py" />
         <option value="$PROJECT_DIR$/ex2.py" />
+        <option value="$PROJECT_DIR$/TrainModel.py" />
+        <option value="$PROJECT_DIR$/PassiveAggressive.py" />
       </list>
     </option>
   </component>
@@ -208,9 +192,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
-    <option name="width" value="1874" />
+    <option name="x" value="8" />
+    <option name="y" value="-13" />
+    <option name="width" value="1873" />
     <option name="height" value="1096" />
   </component>
   <component name="ProjectView">
@@ -339,11 +323,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1874" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1865" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24862184" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2498615" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -376,16 +360,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="first init + loading training set to df" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dontUpload.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="239" column="50" lean-forward="true" selection-start-line="239" selection-start-column="50" selection-end-line="239" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/train_x.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -400,21 +374,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PassiveAggressive.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1558214072505" expanded="true" signature="137:138" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/train_y.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="1200" column="10" lean-forward="true" selection-start-line="1200" selection-start-column="10" selection-end-line="1200" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrainModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="e#1#12#0" expanded="true" />
+            <marker date="1558215515930" expanded="true" signature="51:56" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dontUpload.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="229" column="44" lean-forward="true" selection-start-line="229" selection-start-column="44" selection-end-line="229" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataManipulations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ex2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -427,38 +425,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Perceptron.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="150">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
           <folding>
             <element signature="e#35#53#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TrainModel.py">
+    <entry file="file://$PROJECT_DIR$/PassiveAggressive.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="420">
+          <caret line="41" column="55" lean-forward="true" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
           <folding>
-            <element signature="e#1#12#0" expanded="true" />
-            <marker date="1558214617619" expanded="true" signature="51:56" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataManipulations.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ex2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="674">
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1558215824338" expanded="true" signature="137:138" ph="..." />
           </folding>
         </state>
       </provider>

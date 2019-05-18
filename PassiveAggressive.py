@@ -39,7 +39,7 @@ class PassiveAggressive(ModelInterface):
             loss = self.__calc_loss(weight_y, weight_y_hat, row)
 
             # calculate tao as provided in ex2.pdf
-            tau = loss / (np.linalg.norm(row) ** 2)
+            tau = loss / 2 * (np.linalg.norm(row) ** 2)
 
             # encourage the row_y_values
             self._weight_matrix[row_y_values, :] += tau * row
