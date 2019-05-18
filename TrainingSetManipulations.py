@@ -1,5 +1,11 @@
 import pandas as pd
 
+DATA_SET_X_VALUES = ["Sex", "Length", "Diameter", "Height",
+                     "Whole Weight", "Shucked Weight",
+                     "Viscera Weight", "Shell Weight"]
+
+DATA_SET_Y_VALUES = ["Y_Values"]
+
 
 class TrainingSetManipulations:
     @staticmethod
@@ -7,11 +13,9 @@ class TrainingSetManipulations:
         # read to data frame
         x_df = pd.read_csv(x_training_fp,
                            delimiter=',',
-                           names=["Sex", "Length", "Diameter", "Height",
-                                  "Whole Weight", "Shucked Weight",
-                                  "Viscera Weight", "Shell Weight"])
+                           names=DATA_SET_X_VALUES)
 
-        y_df = pd.read_csv(y_training_fp, names=["Y Values"])
+        y_df = pd.read_csv(y_training_fp, names=DATA_SET_Y_VALUES)
 
         if len(x_df) != len(y_df):
             raise ValueError("Make sures files are of the same size!")
