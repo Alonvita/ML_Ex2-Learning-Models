@@ -6,6 +6,8 @@ from PassiveAggressive import PassiveAggressive
 from DataManipulations import DataManipulations as DM
 
 OUTPUT_SIZE = 50
+LEARNING_RATE = 0.001
+COEF_LAMBDA = 0.17
 
 
 def main(training_x_fp, training_y_fp, x_values_test_fp):
@@ -23,11 +25,11 @@ def main(training_x_fp, training_y_fp, x_values_test_fp):
     input_dim = len(X[0])
 
     perceptron = Perceptron(input_dim, output_dim)
-    svm = SVM(input_dim, output_dim, 0.1)
+    svm = SVM(input_dim, output_dim, COEF_LAMBDA)
     passive_aggressive = PassiveAggressive(input_dim, output_dim)
 
-    best_perceptron = FitModel.fit_model(perceptron, X, Y, OUTPUT_SIZE, 0.001)
-    best_svm = FitModel.fit_model(svm, X, Y, 50, 0.001)
+    best_perceptron = FitModel.fit_model(perceptron, X, Y, OUTPUT_SIZE, LEARNING_RATE)
+    best_svm = FitModel.fit_model(svm, X, Y, 50, LEARNING_RATE)
     best_pa = FitModel.fit_model(passive_aggressive, X, Y, OUTPUT_SIZE, None)
 
     manipulated_test_X_values = DM.read_test_file(x_values_test_fp)
