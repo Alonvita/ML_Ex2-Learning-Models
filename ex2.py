@@ -57,12 +57,22 @@ def main(training_x_fp, training_y_fp, x_values_test_fp):
 
 if __name__ == "__main__":
     if sys.argv[3] == "testing_run":
-        numpy_x, numpy_y = DM.train_fp_to_numpy(sys.argv[1], sys.argv[2])
+        numpy_x, numpy_y = DM.train_fp_to_numpy(sys.argv[1], sys.argv[2], testing=True)
         train_x, train_y, eval_x, eval_y = DM.split_data_for_testing(numpy_x, numpy_y)
 
-        with open('testing_run.txt', 'w') as f:
-            f.write('\n'.join(str(y) for y in eval_x))
+        # write everything to files
+        # write train_x
+        with open('testing_run_train_x.txt', 'w') as f:
+            # Achievement Unlocked: STRING MASTER MANIPULATOR
+            f.write('\n'.join(str(','.join(str(item) for item in row)).strip('[]') for row in train_x))
 
-        main(train_x, train_y, "testing_run.txt")
+        with open('testing_run.txt', 'w') as f:
+            f.write('\n'.join(str(','.join(str(item) for item in row)).strip('[]') for row in eval_x))
+
+        # write train_y to file
+        with open('testing_run_train_y.txt', 'w') as f:
+            f.write('\n'.join(str(row) for row in train_y))
+
+        main("testing_run_train_y.txt", "testing_run_train_y.txt", "testing_run.txt")
     else:
         main(sys.argv[1], sys.argv[2], sys.argv[3])
