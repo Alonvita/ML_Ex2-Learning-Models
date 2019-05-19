@@ -6,9 +6,13 @@ sex_to_decimal_dict = {'M': 2, 'F': 4, 'I': 8}
 
 class DataManipulations:
     @staticmethod
-    def train_fp_to_numpy(x_training_fp, y_training_fp):
+    def train_fp_to_numpy(x_training_fp, y_training_fp, testing=False):
         x_samples = np.genfromtxt(x_training_fp, dtype='str', delimiter=',')
-        X = [DataManipulations.__parse_sample(s) for s in x_samples]
+
+        if not testing:
+            X = [DataManipulations.__parse_sample(s) for s in x_samples]
+        else:
+            X = x_samples
 
         Y = np.genfromtxt(y_training_fp, dtype=np.int)
 
