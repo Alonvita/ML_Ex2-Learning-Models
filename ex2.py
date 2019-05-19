@@ -1,4 +1,5 @@
 import sys
+from SVM import SVM
 from FitModel import FitModel
 from Perceptron import Perceptron
 from PassiveAggressive import PassiveAggressive
@@ -22,27 +23,27 @@ def main(training_x_fp, training_y_fp, x_values_test_fp):
     input_dim = len(X[0])
 
     perceptron = Perceptron(input_dim, output_dim)
-    # svm = SVM(input_dim, output_dim, 0.1) TODO: boredda take this off...
+    svm = SVM(input_dim, output_dim, 0.1)
     passive_aggressive = PassiveAggressive(input_dim, output_dim)
 
     best_perceptron = FitModel.fit_model(perceptron, X, Y, OUTPUT_SIZE, 0.001)
-    # best_svm = FitModel.train(svm, X, Y, 50, 0.001) TODO: this too
+    best_svm = FitModel.fit_model(svm, X, Y, 50, 0.001)
     best_pa = FitModel.fit_model(passive_aggressive, X, Y, OUTPUT_SIZE, None)
 
     manipulated_test_X_values = DM.read_test_file(x_values_test_fp)
 
     for test_value in manipulated_test_X_values:
         perceptron_prediction = best_perceptron.predict(test_value)
-        # svm_prediction = best_svm.predict(test_value) TODO: this too :)
+        svm_prediction = best_svm.predict(test_value)
         passive_aggressive_prediction = best_pa.predict(test_value)
 
         print('perceptron: {0},  pa: {1}'.format(perceptron_prediction, passive_aggressive_prediction))
 
-        # TODO: then remove the comment from this part
-        # print('perceptron: {0}, svm: {1}, pa: {2}'.format(
-        #     perceptron_prediction,
-        #     svm_prediction,
-        #     passive_aggressive_predict))
+        print(
+            'perceptron: {0}, svm: {1}, pa: {2}'.format(
+                perceptron_prediction,
+                svm_prediction,
+                passive_aggressive_prediction))
 
 
 if __name__ == "__main__":
