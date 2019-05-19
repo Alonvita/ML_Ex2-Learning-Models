@@ -1,4 +1,5 @@
 import numpy as np
+import random as rd
 
 sex_to_decimal_dict = {'M': 2, 'F': 4, 'I': 8}
 
@@ -32,3 +33,23 @@ class DataManipulations:
 
         return [DataManipulations.__parse_sample(s) for s in samples]
 
+    @staticmethod
+    def shuffle(X, Y):
+        data = list()
+
+        for i in range(len(Y)):
+            data.append(np.append(X[i], Y[i]))
+
+        rd.shuffle(data)
+
+        new_x = []
+        new_y = []
+
+        for i in range(len(data)):
+            new_x.append(data[i][0:-1])
+            new_y.append(data[i][-1])
+
+        new_x = np.array(X)
+        new_y = np.array(Y).astype(int)
+
+        return new_x, new_y
