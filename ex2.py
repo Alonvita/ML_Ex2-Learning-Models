@@ -22,8 +22,7 @@ def main(training_x_fp, training_y_fp, x_values_test_fp):
     :param training_y_fp: file path to training train_y_data to the train_x_data data set
     :param x_values_test_fp: testing train_x_data fp.
     """
-
-    train_x_data, train_y_data = DM.shuffle(DM.train_fp_to_numpy(training_x_fp, training_y_fp))
+    train_x_data, train_y_data = DM.train_fp_to_numpy(training_x_fp, training_y_fp)
 
     output_dim = len(set(train_y_data))
     input_dim = len(train_x_data[0])
@@ -41,6 +40,7 @@ def main(training_x_fp, training_y_fp, x_values_test_fp):
     ideal_models_array.append(model_trainer.fit_model(svm, EPOCHS, LEARNING_RATE))
     ideal_models_array.append(model_trainer.fit_model(passive_aggressive, EPOCHS, None))
 
+    # TESTING
     test_x_values = DM.read_test_file(x_values_test_fp)
 
     for test_value in test_x_values:
@@ -56,4 +56,13 @@ def main(training_x_fp, training_y_fp, x_values_test_fp):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1], sys.argv[2], sys.argv[3])
+    if sys.argv[3] == "testing_run":
+        numpy_x, numpy_y = DM.train_fp_to_numpy(sys.argv[1], sys.argv[2])
+        train_x, train_y, eval_x, eval_y = DM.split_data_for_testing(numpy_x, numpy_y)
+
+        with open('testing_run.txt', 'w') as f:
+            f.write('\n'.join(str(y) for y in eval_x))
+
+        main(train_x, train_y, "testing_run.txt")
+    else:
+        main(sys.argv[1], sys.argv[2], sys.argv[3])

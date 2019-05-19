@@ -53,3 +53,25 @@ class DataManipulations:
         new_y = np.array(Y).astype(int)
 
         return new_x, new_y
+
+    @staticmethod
+    def split_data_for_testing(numpy_x, numpy_y):
+        """
+        split_data_for_testing(numpy_x, numpy_y).
+
+        :param numpy_x: X data as numpy array
+        :param numpy_y: Y values as numpy array
+        :return: train_x, train_y, eval_x, eval_y
+        """
+        data_len = len(numpy_y)
+
+        train_x_len = 0.8 * data_len
+        train_x_len = int(train_x_len)
+
+        train_x = numpy_x[0:train_x_len]
+        train_y = numpy_y[0:train_x_len]
+
+        eval_x = numpy_x[train_x_len:]
+        eval_y = numpy_y[train_x_len:]
+
+        return train_x, train_y, eval_x, eval_y

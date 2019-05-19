@@ -3,7 +3,6 @@ import random as rd
 
 
 class FitModel:
-
     def __init__(self, train_x_data, train_y_data):
         self._X = train_x_data
         self._Y = train_y_data
