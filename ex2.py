@@ -23,7 +23,7 @@ def main(training_x_fp, training_y_fp, x_values_test_fp):
     :param x_values_test_fp: testing train_x_data fp.
     """
 
-    train_x_data, train_y_data = DM.train_fp_to_numpy(training_x_fp, training_y_fp)
+    train_x_data, train_y_data = DM.shuffle(DM.train_fp_to_numpy(training_x_fp, training_y_fp))
 
     output_dim = len(set(train_y_data))
     input_dim = len(train_x_data[0])
