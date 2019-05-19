@@ -8,7 +8,6 @@ class DataManipulations:
     def train_fp_to_numpy(x_training_fp, y_training_fp):
         x_samples = np.genfromtxt(x_training_fp, dtype='str', delimiter=',')
         X = [DataManipulations.__parse_sample(s) for s in x_samples]
-
         Y = np.genfromtxt(y_training_fp, dtype=np.int)
 
         return X, Y

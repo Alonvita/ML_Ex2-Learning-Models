@@ -21,6 +21,8 @@ def main(training_x_fp, training_y_fp, x_values_test_fp):
 
     X, Y = DM.train_fp_to_numpy(training_x_fp, training_y_fp)
 
+    shffel(X,Y)
+
     output_dim = len(set(Y))
     input_dim = len(X[0])
 
@@ -31,6 +33,7 @@ def main(training_x_fp, training_y_fp, x_values_test_fp):
     best_perceptron = FitModel.fit_model(perceptron, X, Y, OUTPUT_SIZE, LEARNING_RATE)
     best_svm = FitModel.fit_model(svm, X, Y, 50, LEARNING_RATE)
     best_pa = FitModel.fit_model(passive_aggressive, X, Y, OUTPUT_SIZE, None)
+
 
     manipulated_test_X_values = DM.read_test_file(x_values_test_fp)
 
@@ -49,4 +52,4 @@ def main(training_x_fp, training_y_fp, x_values_test_fp):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1], sys.argv[2], sys.argv[3])
+    main('train_x.txt', 'train_y.txt', '')

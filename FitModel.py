@@ -66,3 +66,18 @@ class FitModel:
                 hit += 1
 
         return float(hit / (hit + miss))
+
+    @staticmethod
+    def shuffle(X, Y):
+        data = []
+        for i in range(len(Y)):
+            new_data.append(np.append(X[i], Y[i]))
+        random.shuffle(data)
+        X = []
+        Y = []
+        for i in range(len(data)):
+            X.append(data[i][0:-1])
+            Y.append(data[i][-1])
+        X = np.array(X)
+        Y = np.array(Y).astype(int)
+        return X, Y
