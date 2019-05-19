@@ -6,8 +6,8 @@ class PassiveAggressive(Model):
     """
     PassiveAggressive(ModelInterface)
     """
-    def __init__(self, input_dim, output_dim):
-        self._weight_matrix = np.zeros((output_dim, input_dim))
+    def __init__(self, n, k):
+        self._weight_matrix = np.zeros((k, n))
 
     def predict(self, row):
         """

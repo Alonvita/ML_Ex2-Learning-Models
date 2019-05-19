@@ -26,6 +26,7 @@ class Perceptron(Model):
         """
         update(self, row, row_y_value, learning_rate).
 
+
         The update function will predict the y_hat value. Should the y_hat != Y,
         update the weight matrix according to the given LR.
 
