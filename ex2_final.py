@@ -381,10 +381,13 @@ def main(training_x_fp, training_y_fp, x_values_test_fp, testing_run=False):
 
     test_x_values = DM.read_test_file(x_values_test_fp)
     test_y_data = []
+
     i = 0
     if testing_run:
-        test_y_data = np.genfromtxt('testing_run_train_y.txt', dtype=np.int)
+        test_y_data = np.genfromtxt('results.txt', dtype=np.int)
+
     test_y_val = [0, 0, 0]
+
     for test_value in test_x_values:
         predictions = list()
 
@@ -395,14 +398,16 @@ def main(training_x_fp, training_y_fp, x_values_test_fp, testing_run=False):
             predictions[PERCEPTRON_PREDICTION_OFFSET],
             predictions[SVM_PREDICTION_OFFSET],
             predictions[PA_PREDICTION_OFFSET]))
+
         if testing_run:
-            i += 1
             if predictions[PERCEPTRON_PREDICTION_OFFSET] == test_y_data[i]:
                 test_y_val[PERCEPTRON_PREDICTION_OFFSET] += 1
             if predictions[SVM_PREDICTION_OFFSET] == test_y_data[i]:
                 test_y_val[SVM_PREDICTION_OFFSET] += 1
             if predictions[PA_PREDICTION_OFFSET] == test_y_data[i]:
                 test_y_val[PA_PREDICTION_OFFSET] += 1
+            i += 1
+
     if testing_run:
         print('validation: perceptron: {0}, svm: {1}, pa: {2}'.format(
             test_y_val[PERCEPTRON_PREDICTION_OFFSET]/len(test_y_data),
@@ -412,6 +417,13 @@ def main(training_x_fp, training_y_fp, x_values_test_fp, testing_run=False):
 
 if __name__ == "__main__":
     if sys.argv[3] == "testing_run":
+        '''
+        Unfortunately, this does NOT work well. Something about the samples shuffling goes 
+        wrong. In order to test, run the code with a the following args:
+        tran_x.txt tran_y.txt test_x.txt
+        
+        and when calling main(), make sure to put testing_run=True!
+        '''
         numpy_x, numpy_y = DM.train_fp_to_numpy(sys.argv[1], sys.argv[2], testing=True)
         train_x, train_y, eval_x, eval_y = DM.split_data_for_testing(numpy_x, numpy_y)
 
@@ -435,4 +447,5 @@ if __name__ == "__main__":
         print(time.time())
 
     else:
+        # TESTING LINE: main(sys.argv[1], sys.argv[2], sys.argv[3], testing_run=True)
         main(sys.argv[1], sys.argv[2], sys.argv[3])
