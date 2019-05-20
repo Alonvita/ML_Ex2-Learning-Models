@@ -45,7 +45,11 @@ def main(training_x_fp, training_y_fp, x_values_test_fp, testing_run=False):
     ideal_models_array.append(model_trainer.fit_model(passive_aggressive, PA_EPOCHS, None, print_results=True))
 
     test_x_values = DM.read_test_file(x_values_test_fp)
-
+    test_y_data = []
+    i = 0
+    if testing_run:
+        test_y_data = np.genfromtxt('testing_run_train_y.txt', dtype=np.int)
+    test_y_val = [0, 0, 0]
     for test_value in test_x_values:
         predictions = list()
 
@@ -56,6 +60,19 @@ def main(training_x_fp, training_y_fp, x_values_test_fp, testing_run=False):
             predictions[PERCEPTRON_PREDICTION_OFFSET],
             predictions[SVM_PREDICTION_OFFSET],
             predictions[PA_PREDICTION_OFFSET]))
+        if testing_run:
+            i += 1
+            if predictions[PERCEPTRON_PREDICTION_OFFSET] == test_y_data[i]:
+                test_y_val[PERCEPTRON_PREDICTION_OFFSET] += 1
+            if predictions[SVM_PREDICTION_OFFSET] == test_y_data[i]:
+                test_y_val[SVM_PREDICTION_OFFSET] += 1
+            if predictions[PA_PREDICTION_OFFSET] == test_y_data[i]:
+                test_y_val[PA_PREDICTION_OFFSET] += 1
+    if testing_run:
+        print('validation: perceptron: {0}, svm: {1}, pa: {2}'.format(
+            test_y_val[PERCEPTRON_PREDICTION_OFFSET]/len(test_y_data),
+            test_y_val[SVM_PREDICTION_OFFSET]/len(test_y_data),
+            test_y_val[PA_PREDICTION_OFFSET]/len(test_y_data)))
 
 
 if __name__ == "__main__":
@@ -78,7 +95,7 @@ if __name__ == "__main__":
 
         print(time.time())
 
-        main("testing_run_train_x.txt", "testing_run_train_y.txt", "testing_run.txt")
+        main("testing_run_train_x.txt", "testing_run_train_y.txt", "testing_run.txt", testing_run=True)
 
         print(time.time())
 
