@@ -74,5 +74,6 @@ if __name__ == "__main__":
             f.write('\n'.join(str(row) for row in train_y))
 
         main("testing_run_train_x.txt", "testing_run_train_y.txt", "testing_run.txt")
+
     else:
         main(sys.argv[1], sys.argv[2], sys.argv[3])
