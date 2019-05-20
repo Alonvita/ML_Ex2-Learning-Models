@@ -39,7 +39,11 @@ class PassiveAggressive(Model):
             loss = self.__calc_loss(weight_y, weight_y_hat, row)
 
             # calculate tao as provided in ex2.pdf
-            tau = loss / 2 * (np.linalg.norm(row) ** 2)
+            tau = 2 * (np.linalg.norm(row) ** 2)
+
+            # --- calculation overflow reached ---
+            # this split is essential as calculating in a single row as caused an overflow...
+            tau = loss / tau
 
             # encourage the row_y_values
             self._weight_matrix[row_y_values, :] += tau * row

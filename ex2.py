@@ -1,4 +1,5 @@
 import sys
+import time
 from SVM import SVM
 from FitModel import FitModel
 from Perceptron import Perceptron
@@ -9,12 +10,15 @@ PERCEPTRON_PREDICTION_OFFSET = 0
 SVM_PREDICTION_OFFSET = 1
 PA_PREDICTION_OFFSET = 2
 
-EPOCHS = 50
+PERCEPTRON_EPOCHS = 15
+SVM_EPOCHS = 12
+PA_EPOCHS = 10
+
 LEARNING_RATE = 0.001
-COEF_LAMBDA = 0.17
+COEF_LAMBDA = 0.12
 
 
-def main(training_x_fp, training_y_fp, x_values_test_fp):
+def main(training_x_fp, training_y_fp, x_values_test_fp, testing_run=False):
     """
     main(training_x_fp, training_y_fp, test_x_fp).
 
@@ -36,11 +40,10 @@ def main(training_x_fp, training_y_fp, x_values_test_fp):
 
     ideal_models_array = list()
 
-    ideal_models_array.append(model_trainer.fit_model(perceptron, EPOCHS, LEARNING_RATE))
-    ideal_models_array.append(model_trainer.fit_model(svm, EPOCHS, LEARNING_RATE))
-    ideal_models_array.append(model_trainer.fit_model(passive_aggressive, EPOCHS, None))
+    ideal_models_array.append(model_trainer.fit_model(perceptron, PERCEPTRON_EPOCHS, LEARNING_RATE, print_results=True))
+    ideal_models_array.append(model_trainer.fit_model(svm, SVM_EPOCHS, LEARNING_RATE, print_results=True))
+    ideal_models_array.append(model_trainer.fit_model(passive_aggressive, PA_EPOCHS, None, print_results=True))
 
-    # TESTING
     test_x_values = DM.read_test_file(x_values_test_fp)
 
     for test_value in test_x_values:
@@ -73,7 +76,11 @@ if __name__ == "__main__":
         with open('testing_run_train_y.txt', 'w') as f:
             f.write('\n'.join(str(row) for row in train_y))
 
+        print(time.time())
+
         main("testing_run_train_x.txt", "testing_run_train_y.txt", "testing_run.txt")
+
+        print(time.time())
 
     else:
         main(sys.argv[1], sys.argv[2], sys.argv[3])
