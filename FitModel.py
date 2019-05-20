@@ -18,6 +18,9 @@ class FitModel:
 
         :return: the best model found
         """
+        if print_results:
+            print("--- Start: Printing model results ---")
+
         indices = list(range(len(self._X)))
         best_model = model  # init as the given model
         best_acc_found = self.__measure_accuracy(model)  # measure accuracy of the given model
@@ -35,12 +38,18 @@ class FitModel:
 
             accuracy_percent = self.__measure_accuracy(model) * 100
 
-            if accuracy_percent < best_acc_found:
+            if best_acc_found < accuracy_percent:
                 best_model = copy.deepcopy(model)
                 best_acc_found = accuracy_percent
 
             if print_results:
                 print('Epoch: {0}, Accuracy: {1}%'.format(ep + 1, int(accuracy_percent)))
+
+        if print_results:
+            print('Best accuracy found is: {0}%:'.format(int(best_acc_found)))
+
+        if print_results:
+            print("--- End: Printing model results ---")
 
         return best_model
 
